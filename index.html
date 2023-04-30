@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Worksheet Solver</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    #logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="logo">GOAL SET</div>
+  <div class="container">
+    <h1>Worksheet Solver</h1>
+    <p>Please read the following paragraph and answer the questions with True or False:</p>
+    <p><strong>Paragraph:</strong> Artificial intelligence (AI) is the simulation of human intelligence processes by computer systems. These processes include learning, reasoning, and self-correction. AI technology is rapidly advancing and has been integrated into a wide range of applications such as virtual assistants, image recognition, and autonomous vehicles.</p>
+    <form>
+      <div class="form-group">
+        <h4>Question 1:</h4>
+        <label for="q1">AI technology is only used in virtual assistants.</label><br>
+        <input type="radio" id="q1t" name="q1" value="true">True<br>
+        <input type="radio" id="q1f" name="q1" value="false">False<br>
+      </div>
+      <div class="form-group">
+        <h4>Question 2:</h4>
+        <label for="q2">AI systems can learn, reason, and correct themselves.</label><br>
+        <input type="radio" id="q2t" name="q2" value="true">True<br>
+        <input type="radio" id="q2f" name="q2" value="false">False<br>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="checkAnswers()">Submit</button>
+    </form>
+    <br>
+    <h3 id="result"></h3>
+    <h3 id="answers"></h3>
+  </div>
+  <script src="worksheet.js"></script>
+</body>
+</html>
